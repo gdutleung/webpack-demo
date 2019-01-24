@@ -43,6 +43,8 @@ module.exports = {
 			}
 		]
 	},
+	// 源码与打包后文件对应，方便开发调试错误
+	devtool: "inline-source-map",
 	plugins: [
 		new CleanWebpackPlugin(['dist']),
 		new HtmlWebpackPlugin({
