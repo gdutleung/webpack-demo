@@ -45,9 +45,6 @@ module.exports = {
 	},
 	// 源码与打包后文件对应，方便开发调试错误
 	devtool: "inline-source-map",
-	devServer: {
-		contentBase: './dist'
-	},
 	plugins: [
 		new CleanWebpackPlugin(['dist']),
 		new HtmlWebpackPlugin({
@@ -56,6 +53,7 @@ module.exports = {
 	],
 	output: {
 		filename: '[name].bundle.js',
-		path: path.resolve(__dirname, 'dist')
+		path: path.resolve(__dirname, 'dist'),
+		publicPath: "/"
 	}
 }

@@ -1,4 +1,4 @@
 export default function printMe() {
-	console.log('I get called from print.js!');
-	// console.error('I got an error.');
+	// console.log('I get called from print.js!');
+	console.error('I got an error.');
 }
